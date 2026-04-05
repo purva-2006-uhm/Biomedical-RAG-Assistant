@@ -1,0 +1,12 @@
+services:
+  biomedical-rag:
+    build: .
+    container_name: biomedical-rag-assistant
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    volumes:
+      - ./chroma_db:/app/chroma_db
+      - ./data:/app/data
+    restart: unless-stopped

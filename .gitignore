@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Chroma temp
+temp_chroma_*
+chroma_db/index/
+chroma_db/chroma.sqlite3-wal
+chroma_db/chroma.sqlite3-shm
+
+# OS
+.DS_Store
+Thumbs.db
